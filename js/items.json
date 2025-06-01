@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Tacos",
+    "ingredients": "Tortilla, Chicken, Lettuce",
+    "category": "Lunch"
+  },
+  {
+    "name": "Pancakes",
+    "ingredients": "Flour, Eggs, Milk",
+    "category": "Breakfast"
+  }
+]
