@@ -1,1 +1,130 @@
-<!--Your HTML code here-->
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DelishBites - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    .hero-img {
+      background: url('img/food-banner.jpg') center center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .recipe-card img {
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .recipe-card:hover img {
+      transform: scale(1.05);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .testimonial {
+      background-color: #f8f9fa;
+      border-left: 4px solid #ffc107;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      animation: fadeIn 1.5s ease-in;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">DelishBites</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="managerecipes.html">Manage Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="analytics.html">Analytics</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-img">
+    <div class="text-center">
+      <h1 class="display-4">Welcome to DelishBites</h1>
+      <p class="lead">Celebrating global flavors, one recipe at a time.</p>
+    </div>
+  </header>
+
+  <main class="container mt-5">
+    <section class="mb-5">
+      <h2>Our Story</h2>
+      <p>Hello! I'm <strong>Aaron Rodrigues</strong>, the founder of DelishBites. My journey with food goes beyond just flavors and recipes — it’s about culture, people, and unforgettable experiences.</p>
+      <p>Over the years, I’ve had the incredible opportunity to travel across <strong>20 countries</strong>, immersing myself in diverse cultures and tasting a wide variety of cuisines. From the spicy street food of Bangkok to the rustic pastas of Rome, each dish I encountered told a story. These experiences ignited a deep passion in me for food and the cultures it represents.</p>
+      <p>DelishBites was born out of this love. It’s a place where stories, flavors, and cultures blend. Whether you’re a home cook, a traveler, or simply a food lover — there’s something here for everyone.</p>
+    </section>
+
+    <section class="mb-5">
+      <h2>Featured Recipes</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card recipe-card">
+            <img src="img/tacos.jpg" class="card-img-top" alt="Tacos">
+            <div class="card-body">
+              <h5 class="card-title">Spicy Mexican Tacos</h5>
+              <p class="card-text">A street food favorite from Mexico, bursting with flavors and freshness.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card recipe-card">
+            <img src="img/ramen.jpg" class="card-img-top" alt="Ramen">
+            <div class="card-body">
+              <h5 class="card-title">Authentic Japanese Ramen</h5>
+              <p class="card-text">Savory, steamy, and deeply satisfying — a bowl of comfort from Tokyo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card recipe-card">
+            <img src="img/pasta.jpg" class="card-img-top" alt="Pasta">
+            <div class="card-body">
+              <h5 class="card-title">Rustic Italian Pasta</h5>
+              <p class="card-text">Simple yet rich, handmade pasta tossed in aromatic herbs and sauce.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h2>What You’ll Find Here</h2>
+      <ul>
+        <li>Authentic recipes from around the world</li>
+        <li>Interactive tools to manage your favorite dishes</li>
+        <li>Data-driven insights into global food trends</li>
+        <li>Stories that celebrate food and culture</li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2>What Our Readers Say</h2>
+      <div class="testimonial">
+        <p>“DelishBites has inspired me to try dishes I never imagined cooking. Every recipe has a story, and that makes it so much more special.”<br><strong>– Priya Sharma</strong></p>
+      </div>
+      <div class="testimonial">
+        <p>“Aaron’s journey and recipes bring warmth and flavor to my kitchen. This is more than a food blog — it’s a cultural experience.”<br><strong>– Daniel Kim</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    &copy; 2025 DelishBites | Crafted with flavor by Aaron Rodrigues
+  </footer>
+</body>
+</html>
